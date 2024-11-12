@@ -1600,9 +1600,9 @@ variable "create_flow_log_cloudwatch_iam_role" {
 variable "flow_log_cloudwatch_iam_role_conditions" {
   description = "Additional conditions of the CloudWatch role assumption policy"
   type = list(object({
-    test = string
+    test     = string
     variable = string
-    values = list(string)
+    values   = list(string)
   }))
   default = []
 }
