@@ -1604,6 +1604,7 @@ variable "flow_log_cloudwatch_iam_role_conditions" {
     variable = string
     values = list(string)
   }))
+  default = []
 }
 
 variable "flow_log_cloudwatch_iam_role_arn" {
